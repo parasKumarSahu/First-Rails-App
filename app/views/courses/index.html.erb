@@ -1,3 +1,6 @@
+<% if @countries_to_display.nil?%>
+<p>Invalid Query!!!</p>
+<% else %>
 <h1>Countries (<%= @countries_to_display.size %>)</h1>
 
 <table border="1">
@@ -22,3 +25,4 @@
     </tr>
   <% end %>
 </table>
+<% end %>
